@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script type="text/Javascript">
+            function Greater() {
+                var x= parseInt(document.getElementById("First").value);
+                var y= parseInt(document.getElementById("Second").value);
+                var Greater = x>y;
+                document.getElementById("Answer").value = Greater;
+                
+            }
+        </script>
+    </head>
+    <body>
+        <p>Enter the First Number: <input id = "First"></p>
+        <p>Enter the Second Number: <input id = "Second"></p>
+        <button onclick="Greater()"> Greater </button>
+        <p> First > Second <input id = "Answer"></p>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script type="text/Javascript">
+            function or() {
+                var x= parseInt(document.getElementById("First").value);
+                var y= parseInt(document.getElementById("Second").value);
+                var or= x||y;
+                document.getElementById("Answer").value = or;
+                
+            }
+        </script>
+    </head>
+    <body>
+        <p>Enter the First Binary Number: <input id = "First"></p>
+        <p>Enter the Second Binary Number <input id = "Second"></p>
+        <button onclick="or()"> Or </button>
+        <p> Logical_Or <input id = "Answer"></p>
+    </body>
+</html>

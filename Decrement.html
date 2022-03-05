@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script type="text/Javascript">
+            function dec() {
+                var x= parseInt(document.getElementById("First").value);
+                var inc= x--;
+                document.getElementById("Ans").value = x;
+                document.getElementById("Answer").value = inc;
+                
+            }
+        </script>
+    </head>
+    <body>
+        <p>Enter the Number: <input id = "First"> </p>
+        
+        <button onclick="dec()"> Decrement </button>
+        <p> Number <input id = "Answer"> </p>
+        <p> Decremented Number <input id = "Ans"> </p>
+    </body>
+</html>

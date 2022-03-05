@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script type="text/Javascript">
+            function Greater_Equal() {
+                var x= parseInt(document.getElementById("First").value);
+                var y= parseInt(document.getElementById("Second").value);
+                var Greater_Equal = x>=y;
+                document.getElementById("Answer").value = Greater_Equal;
+                
+            }
+        </script>
+    </head>
+    <body>
+        <p>Enter the First Number: <input id = "First"></p>
+        <p>Enter the Second Number: <input id = "Second"></p>
+        <button onclick="Greater_Equal()"> Greater_Equal </button>
+        <p> First >= Second <input id = "Answer"></p>
+    </body>
+</html>

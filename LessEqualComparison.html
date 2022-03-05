@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script type="text/Javascript">
+            function less_equal() {
+                var x= parseInt(document.getElementById("First").value);
+                var y= parseInt(document.getElementById("Second").value);
+                var less_equal = x<=y;
+                document.getElementById("Answer").value = less_equal;
+                
+            }
+        </script>
+    </head>
+    <body>
+        <p>Enter the First Number: <input id = "First"></p>
+        <p>Enter the Second Number: <input id = "Second"></p>
+        <button onclick="less_equal()"> less_qual </button>
+        <p> First <= Second <input id = "Answer"></p>
+    </body>
+</html>

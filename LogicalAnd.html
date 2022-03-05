@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script type="text/Javascript">
+            function and() {
+                var x= parseInt(document.getElementById("First").value);
+                var y= parseInt(document.getElementById("Second").value);
+                var and= x&&y;
+                document.getElementById("Answer").value = and;
+                
+            }
+        </script>
+    </head>
+    <body>
+        <p>Enter the First Binary Number: <input id = "First"></p>
+        <p>Enter the Second Binary Number <input id = "Second"></p>
+        <button onclick="and()"> And </button>
+        <p> Logical_And <input id = "Answer"></p>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script type="text/Javascript">
+            function not() {
+                var x= parseInt(document.getElementById("First").value);
+                var y= parseInt(document.getElementById("Ans").value);
+                var not= x!=y;
+                document.getElementById("Answer").value = not;    
+            }
+        </script>
+    </head>
+    <body>
+        <p>Enter the First Binary Number: <input id = "First"></p>
+        <p>Enter your Answer for Logical_Not  <input id = "Ans"></p>
+        <button onclick="not()"> Not </button>
+        <p> Logical_Not <input id = "Answer"></p>
+    </body>
+</html>
