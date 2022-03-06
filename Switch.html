@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script type="text/Javascript">
+            function Switch()
+            {
+                var a = parseInt(document.getElementById("first").value);
+                var b = parseInt(document.getElementById("second").value);
+                operation = document.getElementById("operator").value;
+                switch (operation) {
+                    case "+" : document.getElementById("ans").value = (a+b);
+                        
+                        break;
+                    
+                    case "-" : document.getElementById("ans").value = (a-b);
+
+                        break;
+                    
+                    case "*" : document.getElementById("ans").value = (a*b);
+
+                        break;
+
+                    case "/" : document.getElementById("ans").value = (a/b);
+
+                        break;
+
+                    case "%" : document.getElementById("ans").value = (a%b);
+
+                        break;
+                
+                    default:
+                        break;
+                        
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p>Enter First Number : <input id = "first"> </p>
+        <p>Enter Second Number : <input id = "second"> </p>
+        <p>Select the Operator : 
+        <select name="operation"  id="operator" >
+            <option value="add"> + </option>
+            <option value="subtract"> - </option>
+            <option value="multiply"> * </option>
+            <option value="division"> / </option>
+            <option value="mod"> % </option>
+        </select></p>
+        <button onclick="Switch()" > switch </button>
+        <p>Answer : <input id = "ans"> </p>
+    </body>
+</html>
